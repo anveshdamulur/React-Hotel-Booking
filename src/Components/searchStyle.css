@@ -1,0 +1,57 @@
+.imageContainer{
+        background:url('https://i.pinimg.com/originals/98/65/56/9865563fb68654d463782de91b8f4785.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style: solid;
+        border-color: aliceblues;
+}
+body{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+#logo{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 8em;
+    background-color: wheat;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 80%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.heading{
+    font-size: 6rem;
+    text-align: center;
+    margin-top: -50px;
+    color: red;
+}
+.locationSelector{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.locationSelector{
+    margin: auto;
+    width: 500px;
+}
+#locationDropDown{
+    width: 50%;
+    height: 40px;
+}
+#restaurentInput{
+    width: 50%;
+    height: 40px;
+}
+.container-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container-display{
+   display: flex;
+   flex-direction: column;
+}
