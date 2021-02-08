@@ -4,10 +4,10 @@ export default class QuickDisplay extends Component {
     handleDisplayData=(data,index)=>{
         if(data){
             return(
-                <div>
+                <div key={index}>
                     {data.map((item,i)=>{
                     return(
-                        <div className="row">
+                        <div key={i} className="row">
                                 <div className="col-md-4" key={i}>
                                     <Link to={`/list/${item.trip}`}>
                                         <div className="card lg-2" style={{width: '600px'}}>

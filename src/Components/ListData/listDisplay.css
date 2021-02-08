@@ -1,0 +1,25 @@
+.conatiner-listdisplay{
+    width: auto;
+    /* margin-right: 200px; */
+}
+.card{
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 10px;
+    transition-property: width;
+    transition-duration: 2s;
+    box-shadow: 1px 5px 4px 5px #888888;
+}
+
+.card:hover{
+    z-index: -1;
+}
+
+
+img{
+    margin-top: 6px;
+}
+hr{
+    width: 250px;
+    border-top: 3px dotted red;
+}

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react'
 import Filter from '../Filters/Filter';
+import FilterCost from '../Filters/FilterCost';
 import ListDisplay from './ListDisplay';
 const listUrl = 'https://developerfunnel.herokuapp.com/hotellist'
 
@@ -19,7 +20,13 @@ export default class ListApi extends Component {
                 listData : data
             })
         }
-      
+    }
+    setCostFilter=(costData)=>{
+        if(costData){
+            this.setState({
+                listData : costData
+            })
+        }
     }
 
 
@@ -27,10 +34,12 @@ export default class ListApi extends Component {
         return (
         <div>
             <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                        <Filter roomTypeData ={(filData)=>{this.setDataPerFfilter(filData)}}/>
+                       <hr/>
+                       <FilterCost filterWithCost ={(costData)=>{this.setCostFilter(costData)}}/>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-9">
                         <ListDisplay
                         displayList = {this.state.listData}
                         />

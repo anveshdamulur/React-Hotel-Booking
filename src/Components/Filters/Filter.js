@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react'
 import './filter.css'
+import FilterCost from './FilterCost';
 
 const filterUrl ='https://developerfunnel.herokuapp.com/hotellist'
 
@@ -22,8 +23,8 @@ export default class Filter extends Component {
     }
     render() {
         return (
-            <div onChange={this.handleFilter} className="container-filter">
-               
+          <div>
+               <div onChange={this.handleFilter} className="container-filter">  
                     <label className="radio">
                          <input type="radio" name="room" value='' id=""/><span>All</span>
                     </label>
@@ -39,8 +40,12 @@ export default class Filter extends Component {
                     <label className="radio">
                          <input type="radio" name="room" value='4' id=""/><span>Semi Delux Romm</span> 
                     </label> 
-            
-            </div>
+          
+               </div>
+               
+          </div>
+           
+          
         )
     }
 }
