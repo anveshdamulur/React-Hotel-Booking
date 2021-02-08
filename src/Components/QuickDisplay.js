@@ -7,7 +7,8 @@ export default class QuickDisplay extends Component {
                 <div>
                     {data.map((item,i)=>{
                     return(
-                            <div key={i} className='container-display'>
+                        <div className="row">
+                                <div className="col-md-4" key={i}>
                                     <Link to={`/list/${item.trip}`}>
                                         <div className="card lg-2" style={{width: '600px'}}>
                                         <div className="row g-0">
@@ -23,7 +24,9 @@ export default class QuickDisplay extends Component {
                                         </div>
                                         </div>        
                                     </Link>
-                                </div>
+                                </div>  
+                        </div>
+                            
                             )
                         })
                      }

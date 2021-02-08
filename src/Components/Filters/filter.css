@@ -1,0 +1,22 @@
+.container-filter{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.container-filter .radio{
+    color: blue;
+}
+input{
+    margin-left: 10px;
+    border: 1px solid yellow;
+}
+.container-filter .radio:hover{
+    color: brown;
+}
+
+span{
+    margin-left: 4px;
+}

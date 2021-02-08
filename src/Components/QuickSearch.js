@@ -12,9 +12,12 @@ export default class QuickSearch extends Component {
     render() {
         return (
             <div>
-                <QuickDisplay
-                    data = {this.state.quickSearch}
-                />
+                <div>
+                    <QuickDisplay
+                        data = {this.state.quickSearch}
+                    />
+                </div>
+               
             </div>
         )
     }

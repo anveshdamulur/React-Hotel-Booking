@@ -38,14 +38,14 @@ body{
     width: 500px;
 }
 #locationDropDown{
-    width: 50%;
+    width: 150px;
     height: 40px;
 }
 #restaurentInput{
     width: 50%;
     height: 40px;
 }
-.container-display{
+/* .container-display{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,4 +54,4 @@ body{
 .container-display{
    display: flex;
    flex-direction: column;
-}
+} */
